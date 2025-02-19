@@ -29,37 +29,29 @@ img {
 .link1 {
   background-color: hsl(0, 0%, 20%);
   color: white;
-  padding: 12px 150px;
+  padding: 12px 117px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
+  box-sizing: border-box;
   font-family: "Inter", serif;
 }
 .link2 {
   margin-top: 15px;
   background-color: hsl(0, 0%, 20%);
   color: white;
-  padding: 12px 119px;
+  padding: 12px 80px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
+  box-sizing: content-box;
   font-family: "Inter", serif;
 }
 .link3 {
   margin-top: 15px;
   background-color: hsl(0, 0%, 20%);
   color: white;
-  padding: 12px 120px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 10px;
-  font-family: "Inter", serif;
-}
-.link3 {
-  margin-top: 15px;
-  background-color: hsl(0, 0%, 20%);
-  color: white;
-  padding: 12px 144px;
+  padding: 12px 110px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
@@ -69,7 +61,7 @@ img {
   margin-top: 15px;
   background-color: hsl(0, 0%, 20%);
   color: white;
-  padding: 12px 151px;
+  padding: 12px 116px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
@@ -79,7 +71,7 @@ img {
   margin-top: 15px;
   background-color: hsl(0, 0%, 20%);
   color: white;
-  padding: 12px 143px;
+  padding: 12px 104px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
@@ -106,9 +98,12 @@ footer {
   margin-top: 1px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   body {
-    margin: auto;
-    height: 375;
+    width: 375px;
+    margin-left: 0;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
